@@ -222,22 +222,22 @@ EditorBuildSettings:
     path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/MMAdditiveLoadingScreenSimple.unity
     guid: 945e5b97212e8e74ebcd35bddde3970c
   - enabled: 1
-    path: Assets/UPB/Scenes/Inicio.unity
+    path: Assets/Proyecto/Assets/Escenas/Inicio.unity
     guid: 267a4742ef0855549a5b8820e3309891
   - enabled: 1
-    path: Assets/UPB/Scenes/Creditos.unity
+    path: Assets/Proyecto/Assets/Escenas/Creditos.unity
     guid: 754318613f38802448b39b468018b753
   - enabled: 1
-    path: Assets/UPB/Scenes/Gano.unity
+    path: Assets/Proyecto/Assets/Escenas/Gano.unity
     guid: de3e27de2e796c44b9d4cba0435d3513
   - enabled: 1
-    path: Assets/UPB/Scenes/Instrucciones.unity
+    path: Assets/Proyecto/Assets/Escenas/Instrucciones.unity
     guid: 5490007d7edab1b47b790e56e6ce4057
   - enabled: 1
-    path: Assets/UPB/Scenes/Nivel 4.unity
+    path: Assets/Proyecto/Assets/Escenas/Nivel 4.unity
     guid: 653c3ea65f46ad046b6e599197d60c04
   - enabled: 1
-    path: Assets/UPB/Scenes/Perdio.unity
+    path: Assets/Proyecto/Assets/Escenas/Perdio.unity
     guid: 0dc275943866a4a48a703a504f13b0d8
   - enabled: 1
     path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/LoadingScreen.unity

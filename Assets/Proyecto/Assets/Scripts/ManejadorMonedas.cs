@@ -19,7 +19,14 @@ public class ManejadorMonedas:MonoBehaviour, MMEventListener<PickableItemEvent>
 
     public virtual void OnMMEvent(PickableItemEvent e)
     {
-        Debug.Log(e.PickedItem.name);
+        //Debug.Log(e.PickedItem.name);
+        monedas_recolectadas++;
+        Debug.Log(monedas_recolectadas);
+
+        if (monedas_recolectadas == 4)
+        {
+            Debug.Log("Abrir Puerta");
+        }
     }
 
 }
