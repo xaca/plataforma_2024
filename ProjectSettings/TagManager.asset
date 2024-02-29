@@ -8,6 +8,8 @@ TagManager:
   - Music
   - Background
   - NoMask
+  - Puerta
+  - Fruta
   layers:
   - Default
   - TransparentFX

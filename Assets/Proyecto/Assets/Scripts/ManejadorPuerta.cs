@@ -4,9 +4,18 @@ using UnityEngine;
 using MoreMountains.CorgiEngine;
 using MoreMountains.Tools;
 
-public class ManejadorMonedas:MonoBehaviour, MMEventListener<PickableItemEvent>
+public class ManejadorPuerta:MonoBehaviour, MMEventListener<PickableItemEvent>
 {
-    private int monedas_recolectadas;
+    [SerializeField]
+    private GameObject puerta;
+
+    void Start()
+    {
+        if(puerta != null)
+        {
+            puerta.SetActive(false);
+        }
+    }
 
     void OnEnable()
     {
@@ -19,7 +28,13 @@ public class ManejadorMonedas:MonoBehaviour, MMEventListener<PickableItemEvent>
 
     public virtual void OnMMEvent(PickableItemEvent e)
     {
-        Debug.Log(e.PickedItem.name);
+        Debug.Log(e.PickedItem.name + " "+e.PickedItem.tag);
+        
+        if(e.PickedItem.tag == "Fruta")
+        {
+            puerta.SetActive(true);
+        }
+
         /*monedas_recolectadas++;
         Debug.Log(monedas_recolectadas);
 

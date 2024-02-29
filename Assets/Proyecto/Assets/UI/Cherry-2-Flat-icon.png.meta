@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 72977d0387b742744a4fe926acb8c6e3
+guid: aea274d6eff973540b6df64c2d3d8082
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7597697558432557320
-    second: button_jugar_0
+      213: 7048531492834478754
+    second: Cherry-2-Flat-icon_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_jugar_0
+      name: Cherry-2-Flat-icon_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 0
-        width: 274
-        height: 67
+        width: 120
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 809a931dca1707960800000000000000
-      internalID: 7597697558432557320
+      spriteID: 2aa8d8a4c0a61d160800000000000000
+      internalID: 7048531492834478754
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      button_jugar_0: 7597697558432557320
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
