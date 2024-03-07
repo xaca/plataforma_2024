@@ -34,8 +34,8 @@ public class FadeConCoroutine : FadeSinCoroutine
             //Debug.Log("FadeInCoroutine "+alpha);
             c.a = alpha;
             _spriteRenderer.color = c;
-            //yield return new WaitForSeconds(0.1f);
-            yield return null;
+            yield return new WaitForSeconds(0.1f);
+            //yield return null;
         }
         
     }
