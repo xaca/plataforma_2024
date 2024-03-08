@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0793db7e9eb073f45b3ae5e1d0485442
+guid: c4645f80291f2e64f9dbacea55cb9266
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4292721542055797183
-    second: system-star-icon_0
+      213: 4215568577170485072
+    second: sky-34536_1280_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: system-star-icon_0
+      name: sky-34536_1280_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 4
-        width: 127
-        height: 122
+        x: 0
+        y: 0
+        width: 1280
+        height: 885
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb127e9af7fc29b30800000000000000
-      internalID: 4292721542055797183
+      spriteID: 05fab803945b08a30800000000000000
+      internalID: 4215568577170485072
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      system-star-icon_0: 4292721542055797183
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

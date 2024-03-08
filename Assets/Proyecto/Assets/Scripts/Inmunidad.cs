@@ -13,7 +13,7 @@ public class Inmunidad : MonoBehaviour, MMEventListener<PickableItemEvent>
 
     [Header("Inmunidad")]
     [MMInspectorButton("ControlInmunidad")]
-    public bool ControlInmunidadButton;
+    private bool ControlInmunidadButton;
 
     void OnEnable()
     {
