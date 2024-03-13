@@ -28,8 +28,10 @@ public class VentanaControl : MonoBehaviour
      bottomOffSetScreenPosition;
     private Camera _mainCamera; //Main camera of the scene.
     private RectTransform posicion;
+    [SerializeField]
+    private GameObject panel;
 
-     //Set the all position of all the screen side positions.
+    //Set the all position of all the screen side positions.
     private void UpdateAllSideScreenPositions()
     {
         if (_mainCamera == null)
@@ -65,7 +67,7 @@ public class VentanaControl : MonoBehaviour
     void Awake()
     {
         //UpdateAllSideScreenPositions();
-        posicion = transform.GetComponent<RectTransform>();
+        posicion = panel.transform.GetComponent<RectTransform>();
         //RectTransform myRect = posicion;
         //myRect.anchoredPosition.Set(.5f, -1.5f);
         /*myRect.pivot = new Vector2(.5f,-1.5f);
@@ -98,13 +100,14 @@ public class VentanaControl : MonoBehaviour
         //myRect.ForceUpdateRectTransforms();
         //myRect.anchoredPosition = new Vector2(500,-800);
         
-        Vector2 inicio = new Vector2(630,100);
+        Vector2 inicio = new Vector2(274,100);
         //myRect.rect.Set(500,-800,myRect.rect.width,myRect.rect.height);
-        Vector2 fin = new Vector2(630,-800);
+        Vector2 fin = new Vector2(274,-800);
 
         posicion.anchoredPosition = inicio;
         //Debug.Log(myRect.position);
         StartCoroutine(AnimarVentana(inicio,fin));
+        GameManager.Instance.Pause(PauseMethods.NoPauseMenu);
     }
     public void MoveFromTop()
     {
@@ -117,10 +120,18 @@ public class VentanaControl : MonoBehaviour
     }
     // Start is called before the first frame update
 
+    public void CerrarVentana()
+    {
+        Vector2 inicio = new Vector2(274, 100);
+        //myRect.rect.Set(500,-800,myRect.rect.width,myRect.rect.height);
+        Vector2 fin = new Vector2(274, -800);
+        StartCoroutine(AnimarVentana(fin, inicio));
+        GameManager.Instance.Pause(PauseMethods.NoPauseMenu);
+    }
 
     IEnumerator AnimarVentana(Vector2 inicio,Vector2 fin){
         //Debug.Log("AnimarVentana");
-        RectTransform temp = new RectTransform();
+        //RectTransform temp = new RectTransform();
         for(float i=0;i<1;i+=.01f){ //Time.deltaTime
             posicion.anchoredPosition = Vector2.Lerp(inicio,fin,i);
             yield return null;

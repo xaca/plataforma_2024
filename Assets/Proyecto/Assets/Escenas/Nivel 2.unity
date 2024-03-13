@@ -1172,7 +1172,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 632.9996, y: -800}
+  m_AnchoredPosition: {x: 274, y: -800}
   m_SizeDelta: {x: 1469.31, y: 598.86}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1186108459
@@ -1600,6 +1600,18 @@ PrefabInstance:
     - target: {fileID: 490956, guid: 6059d977d1f210348bfbe1a82f4f9883, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489144, guid: 6059d977d1f210348bfbe1a82f4f9883, type: 3}
+      propertyPath: CurrentLives
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489144, guid: 6059d977d1f210348bfbe1a82f4f9883, type: 3}
+      propertyPath: MaximumLives
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11489144, guid: 6059d977d1f210348bfbe1a82f4f9883, type: 3}
+      propertyPath: GameOverScene
+      value: Perdio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
